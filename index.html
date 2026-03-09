@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2048</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="h-screen w-screen flex flex-col gap-2 items-center p-4" style="background-color: #FAF8F3;">
+
+    <div class="Header">
+        <span class="title">2048</span>
+    </div>
+    <div id="board" class="aspect-square w-[75%] max-w-md grid grid-cols-4 p-1 mt-2 gap-1 rounded-md relative bg-white" style="box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);">
+        <div id="0" class="tile col-span-1 aspect-square rounded-md flex">
+            <span class="font-bold text-white m-auto">2048</span>
+        </div>
+        <div id="1" class="tile col-span-1 aspect-square rounded-md flex">
+            <span class="font-bold text-white m-auto">2</span>
+        </div>
+        <div id="2" class="tile col-span-1 aspect-square rounded-md flex">
+            <span class=" font-bold text-white m-auto"></span>
+        </div>
+        <div id="3" class="tile col-span-1 aspect-square rounded-md flex">
+            <span class=" font-bold text-white m-auto"></span>
+        </div>
+        <div id="4" class="tile col-span-1 aspect-square rounded-md flex">
+            <span class=" font-bold text-white m-auto"></span>
+        </div>
+        <div id="5" class="tile col-span-1 aspect-square rounded-md flex">
+            <span class=" font-bold text-white m-auto"></span>
+        </div>
+        <div id="6" class="tile col-span-1 aspect-square rounded-md flex">
+            <span class=" font-bold text-white m-auto"></span>
+        </div>
+        <div id="7" class="tile col-span-1 aspect-square rounded-md flex">
+            <span class=" font-bold text-white m-auto"></span>
+        </div>
+        <div id="8" class="tile col-span-1 aspect-square rounded-md flex">
+            <span class=" font-bold text-white m-auto"></span>
+        </div>
+        <div id="9" class="tile col-span-1 aspect-square rounded-md flex">
+            <span class=" font-bold text-white m-auto"></span>
+        </div>
+        <div id="10" class="tile col-span-1 aspect-square rounded-md flex">
+            <span class=" font-bold text-white m-auto"></span>
+        </div>
+        <div id="11" class="tile col-span-1 aspect-square rounded-md flex">
+            <span class=" font-bold text-white m-auto"></span>
+        </div>
+        <div id="12" class="tile col-span-1 aspect-square rounded-md flex">
+            <span class=" font-bold text-white m-auto"></span>
+        </div>
+        <div id="13" class="tile col-span-1 aspect-square rounded-md flex">
+            <span class=" font-bold text-white m-auto"></span>
+        </div>
+        <div id="14" class="tile col-span-1 aspect-square rounded-md flex">
+            <span class=" font-bold text-white m-auto"></span>
+        </div>
+        <div id="15" class="tile col-span-1 aspect-square rounded-md flex">
+            <span class=" font-bold text-white m-auto"></span>
+        </div>
+        <div id="game-over" class="game-over rounded-md flex">
+            <span class="font-bold m-auto text-white text-3xl sm:text-4xl">Game Over!</span>
+        </div>
+    </div>
+    <div class="w-[75%] flex gap-5 mt-10 sm:mt-5">
+        <div class="score text-xs md:text-xl lg:text-2xl ms-auto col-span-1 text-center">
+            Score: <span id="score" class="text-md">0</span>
+        </div>
+        <div class="best-score text-xs md:text-xl lg:text-2xl me-auto col-span-1 text-center">
+            Best Score: <span id="best-score" class="text-md">0</span>
+        </div>
+    </div>
+    <div id="restart-btn" class="Restart-button mt-3 p-3 text-xl md:text-2xl lg:text-3xl">
+        <button>Restart</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
